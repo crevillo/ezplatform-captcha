@@ -1,0 +1,33 @@
+{
+    "name": "the-cocktail/ezplatform-captcha",
+    "description": "Repository dedicated add captcha to some parts of eZ Platform",
+    "type": "bundle",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "The Cocktail team",
+            "homepage": "https://github.com/ezsystems/ezplatform-matrix-fieldtype/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheCocktail\\EzCaptchaBundle\\": "src/bundle/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "gregwar/captcha": "1.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "~2.7.1",
+        "phpunit/phpunit": "^6.4"
+    },
+    "scripts": {
+        "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
