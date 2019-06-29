@@ -1,0 +1,4 @@
+services:
+  TheCocktail\EzCaptchaBundle\Captcha\Builder:
+    arguments:
+      - '%ez_captcha.config%'

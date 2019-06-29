@@ -1,0 +1,2 @@
+parameters:
+  ezsettings.default.security.login_template: "TheCocktailEzCaptchaBundle:Security:login-with-captcha.html.twig"
