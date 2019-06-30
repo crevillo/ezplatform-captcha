@@ -2,17 +2,23 @@
 
 namespace Crevillo\EzCaptchaBundle\Captcha;
 
-use Gregwar\Captcha\CaptchaBuilder;
+use Gregwar\Captcha\CaptchaBuilderInterface;
 
 class Builder
 {
+    /**
+     * @var
+     */
+    private $captchaBuilder;
+
     /**
      * @var array
      */
     private $options;
 
-    public function __construct(array $options = [])
+    public function __construct(CaptchaBuilderInterface $captchaBuilder, array $options = [])
     {
+        $this->captchaBuilder = $captchaBuilder;
         $this->options = $options;
     }
 
@@ -21,9 +27,9 @@ class Builder
      */
     public function build()
     {
-        return (new CaptchaBuilder())->build(
-            $this->options['width'],
-            $this->options['height']
+        return $this->captchaBuilder->build(
+            $this->options['width'] ?? 300,
+            $this->options['height'] ?? 75
         );
     }
 }
