@@ -1,4 +1,4 @@
- {
+{
     "name": "crevillo/ezplatform-captcha",
     "description": "Repository dedicated add captcha to some parts of eZ Platform",
     "type": "bundle",
@@ -17,7 +17,8 @@
     "require": {
         "php": "^7.1",
         "gregwar/captcha-bundle": "2.*",
-        "ezsystems/ezpublish-kernel": "~7.5.1"
+        "ezsystems/ezpublish-kernel": "~7.5.1",
+        "matthiasnoback/symfony-dependency-injection-test": "~3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.15.0",
