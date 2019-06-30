@@ -12,7 +12,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('the_cocktail_ez_captcha');
+        $rootNode = $treeBuilder->root('crevillo_ez_captcha');
         $rootNode
             ->addDefaultsIfNotSet()
             ->children()

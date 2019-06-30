@@ -75,7 +75,7 @@ Configuration
 Add the following configuration to your `app/config/config.yml`:
 
     gregwar_captcha: ~
-    the_cocktail_ez_captcha: ~
+    crevillo_ez_captcha: ~
 
 Usage
 ======
@@ -83,7 +83,7 @@ Usage
 To have captcha in the forms you have to explicity enable this options. 
 Modify your `app/config/config.yml`
 
-    the_cocktail_ez_captcha:
+    crevillo_ez_captcha:
         login_form: true
         forgot_password_form: true
 
