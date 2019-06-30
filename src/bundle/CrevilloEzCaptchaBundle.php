@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Crevillo\EzCaptchaBundle;
 
@@ -6,7 +6,6 @@ use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Crevillo\EzCaptchaBundle\DependencyInjection\Compiler\CaptchaPass;
-use Crevillo\EzCaptchaBundle\DependencyInjection\Security\Factory\CaptchaFormLoginFactory;
 
 class CrevilloEzCaptchaBundle extends Bundle
 {

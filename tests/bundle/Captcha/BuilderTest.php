@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Crevillo\EzPlatformCaptcha\Tests\Bundle\Captcha;
 
@@ -34,7 +34,7 @@ class BuilderTest extends \PHPUnit\Framework\TestCase
         return [
             [['width' => 300, 'height' => 200]],
             [['width' => 300]],
-            [['height' => 300]]
+            [['height' => 300]],
         ];
     }
 }

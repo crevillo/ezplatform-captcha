@@ -1,10 +1,9 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Crevillo\EzCaptchaBundle\MVC\Symfony\Controller;
 
 use eZ\Bundle\EzPublishCoreBundle\Controller;
 use eZ\Publish\Core\MVC\ConfigResolverInterface;
-use Gregwar\Captcha\CaptchaBuilder;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
@@ -64,12 +63,12 @@ class SecurityController extends Controller
         return new Response(
             $this->templateEngine->render(
                 $this->configResolver->getParameter('security.login_template'),
-                array(
+                [
                     'last_username' => $this->authenticationUtils->getLastUsername(),
                     'error' => $this->authenticationUtils->getLastAuthenticationError(),
                     'layout' => $this->configResolver->getParameter('security.base_layout'),
-                    'captcha' => $captcha->inline()
-                )
+                    'captcha' => $captcha->inline(),
+                ]
             )
         );
     }
