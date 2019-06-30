@@ -25,5 +25,6 @@ class TheCocktailEzCaptchaExtension extends Extension
 
         $container->setParameter('ez_captcha.config', $config['configs']);
         $container->setParameter('ez_captcha.login_form', $config['login_form']);
+        $container->setParameter('ez_captcha.forgot_password_form', $config['forgot_password_form']);
     }
 }
