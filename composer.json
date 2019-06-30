@@ -1,4 +1,4 @@
-{
+ {
     "name": "the-cocktail/ezplatform-captcha",
     "description": "Repository dedicated add captcha to some parts of eZ Platform",
     "type": "bundle",
@@ -16,7 +16,7 @@
     },
     "require": {
         "php": "^7.1",
-        "gregwar/captcha": "1.*"
+        "gregwar/captcha-bundle": "2.*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.7.1",
