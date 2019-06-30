@@ -16,7 +16,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->addDefaultsIfNotSet()
             ->children()
-                ->booleanNode('login_form')->defaultFalse()->isRequired()->end()
+                ->booleanNode('login_form')->defaultFalse()->end()
                 ->arrayNode('configs')
                     ->children()
                         ->scalarNode('width')->defaultValue(300)->end()

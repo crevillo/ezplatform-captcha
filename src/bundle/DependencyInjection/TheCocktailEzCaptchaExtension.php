@@ -18,7 +18,6 @@ class TheCocktailEzCaptchaExtension extends Extension
             new FileLocator(__DIR__ . '/../Resources/config')
         );
 
-        $loader->load('default_parameters.yml');
         $loader->load('services.yml');
 
         $configuration = new Configuration();
