@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle\Captcha;
+namespace Crevillo\EzCaptchaBundle\Captcha;
 
 use Gregwar\Captcha\CaptchaBuilder;
 

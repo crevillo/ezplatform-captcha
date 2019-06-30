@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TheCocktail\EzCaptchaBundle\DependencyInjection;
+namespace Crevillo\EzCaptchaBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

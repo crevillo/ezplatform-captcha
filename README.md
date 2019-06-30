@@ -63,7 +63,7 @@ public function registerBundles()
     $bundles = array(
         // ...
         new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
-        new TheCocktail\EzCaptchaBundle\TheCocktailEzCaptchaBundle(),
+        new Crevillo\EzCaptchaBundle\TheCocktailEzCaptchaBundle(),
        
     );
 }

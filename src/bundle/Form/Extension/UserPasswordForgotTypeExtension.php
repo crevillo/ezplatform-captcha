@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle\Form\Extension;
+namespace Crevillo\EzCaptchaBundle\Form\Extension;
 
 use EzSystems\EzPlatformUser\Form\Type\UserPasswordForgotType;
 use Gregwar\CaptchaBundle\Type\CaptchaType;

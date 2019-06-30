@@ -1,15 +1,15 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle\DependencyInjection\Compiler;
+namespace Crevillo\EzCaptchaBundle\DependencyInjection\Compiler;
 
 use EzSystems\EzPlatformUser\Form\Type\UserPasswordForgotType;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
-use TheCocktail\EzCaptchaBundle\Form\Extension\UserPasswordForgotTypeExtension;
-use TheCocktail\EzCaptchaBundle\MVC\Symfony\Controller\SecurityController;
-use TheCocktail\EzCaptchaBundle\Security\Http\Firewall\CaptchaAuthenticationListener;
+use Crevillo\EzCaptchaBundle\Form\Extension\UserPasswordForgotTypeExtension;
+use Crevillo\EzCaptchaBundle\MVC\Symfony\Controller\SecurityController;
+use Crevillo\EzCaptchaBundle\Security\Http\Firewall\CaptchaAuthenticationListener;
 
 class CaptchaPass implements CompilerPassInterface
 {
@@ -19,7 +19,7 @@ class CaptchaPass implements CompilerPassInterface
             $securityControllerDefinition = $container->findDefinition('ezpublish.security.controller');
             $securityControllerDefinition->setClass(SecurityController::class);
             $securityControllerDefinition->addArgument(new Reference('request_stack'));
-            $securityControllerDefinition->addArgument(new Reference('TheCocktail\EzCaptchaBundle\Captcha\Builder'));
+            $securityControllerDefinition->addArgument(new Reference('Crevillo\EzCaptchaBundle\Captcha\Builder'));
 
             $securityAuthenticationListenerFormDefinition = $container->findDefinition(
                 'security.authentication.listener.form'

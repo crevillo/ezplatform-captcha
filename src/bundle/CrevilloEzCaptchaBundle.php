@@ -1,14 +1,14 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle;
+namespace Crevillo\EzCaptchaBundle;
 
 use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use TheCocktail\EzCaptchaBundle\DependencyInjection\Compiler\CaptchaPass;
-use TheCocktail\EzCaptchaBundle\DependencyInjection\Security\Factory\CaptchaFormLoginFactory;
+use Crevillo\EzCaptchaBundle\DependencyInjection\Compiler\CaptchaPass;
+use Crevillo\EzCaptchaBundle\DependencyInjection\Security\Factory\CaptchaFormLoginFactory;
 
-class TheCocktailEzCaptchaBundle extends Bundle
+class CrevilloEzCaptchaBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {

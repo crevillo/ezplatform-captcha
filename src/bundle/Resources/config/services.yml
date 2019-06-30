@@ -1,5 +1,5 @@
 services:
-  TheCocktail\EzCaptchaBundle\Captcha\Builder:
+  Crevillo\EzCaptchaBundle\Captcha\Builder:
     arguments:
       - '%ez_captcha.config%'
 

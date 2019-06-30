@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle\MVC\Symfony\Controller;
+namespace Crevillo\EzCaptchaBundle\MVC\Symfony\Controller;
 
 use eZ\Bundle\EzPublishCoreBundle\Controller;
 use eZ\Publish\Core\MVC\ConfigResolverInterface;
@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\Templating\EngineInterface;
-use TheCocktail\EzCaptchaBundle\Captcha\Builder;
+use Crevillo\EzCaptchaBundle\Captcha\Builder;
 
 class SecurityController extends Controller
 {

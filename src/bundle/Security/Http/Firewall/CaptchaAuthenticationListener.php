@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle\Security\Http\Firewall;
+namespace Crevillo\EzCaptchaBundle\Security\Http\Firewall;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -20,7 +20,7 @@ use Symfony\Component\Security\Http\Firewall\AbstractAuthenticationListener;
 use Symfony\Component\Security\Http\HttpUtils;
 use Symfony\Component\Security\Http\ParameterBagUtils;
 use Symfony\Component\Security\Http\Session\SessionAuthenticationStrategyInterface;
-use TheCocktail\EzCaptchaBundle\Exception\EzCaptchaException;
+use Crevillo\EzCaptchaBundle\Exception\EzCaptchaException;
 
 class CaptchaAuthenticationListener extends AbstractAuthenticationListener
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzCaptchaBundle\Exception;
+namespace Crevillo\EzCaptchaBundle\Exception;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 
