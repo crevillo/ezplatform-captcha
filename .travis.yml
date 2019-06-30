@@ -38,3 +38,4 @@ install:
 
 script:
   - if [ "${TEST_CONFIG}" != "" ] ; then php -d date.timezone=$TEST_TIMEZONE ./vendor/bin/phpunit -c $TEST_CONFIG ; fi
+  - if [ "${CHECK_CS}" = "true" ] ; then ./vendor/bin/php-cs-fixer fix -v --dry-run --diff --show-progress=estimating; fi
