@@ -18,12 +18,6 @@ return PhpCsFixer\Config::create()
         'blank_line_after_opening_tag' => false,
         'single_blank_line_before_namespace' => true,
         'space_after_semicolon' => false,
-        'header_comment' => [
-            'commentType' => 'PHPDoc',
-            'header' => $header,
-            'location' => 'after_open',
-            'separate' => 'top',
-        ],
         'yoda_style' => false,
         'no_break_comment' => false,
         'declare_strict_types' => true,
