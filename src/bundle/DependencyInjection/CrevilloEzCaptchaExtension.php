@@ -23,8 +23,11 @@ class CrevilloEzCaptchaExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('ez_captcha.config', $config['configs']);
         $container->setParameter('ez_captcha.login_form', $config['login_form']);
         $container->setParameter('ez_captcha.forgot_password_form', $config['forgot_password_form']);
+
+        if (array_key_exists('configs', $config)) {
+            $container->setParameter('ez_captcha.config', $config['configs']);
+        }
     }
 }
