@@ -10,5 +10,6 @@
     <testsuites>
         <testsuite name="ezplatform_captcha">
             <directory>tests/bundle</directory>
+        </testsuite>
     </testsuites>
 </phpunit>
