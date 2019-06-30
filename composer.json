@@ -1,17 +1,17 @@
  {
-    "name": "the-cocktail/ezplatform-captcha",
+    "name": "crevillo/ezplatform-captcha",
     "description": "Repository dedicated add captcha to some parts of eZ Platform",
     "type": "bundle",
     "license": "GPL-2.0-only",
     "authors": [
         {
-            "name": "The Cocktail team",
-            "homepage": "https://github.com/ezsystems/ezplatform-matrix-fieldtype/contributors"
+            "name": "Carlos Revillo <crevillo@gmail.com>",
+            "homepage": "https://github.com/crevillo/ezplatform-captcha/contributors"
         }
     ],
     "autoload": {
         "psr-4": {
-            "TheCocktail\\EzCaptchaBundle\\": "src/bundle/"
+            "Crevillo\\EzCaptchaBundle\\": "src/bundle/"
         }
     },
     "require": {
