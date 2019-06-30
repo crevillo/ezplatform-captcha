@@ -26,7 +26,8 @@ class CaptchaPass implements CompilerPassInterface
                 CaptchaAuthenticationListener::class
             );
 
-            $container->setParameter('ezsettings.admin_group.security.login_template', '@ezdesign/Security/login-with-captcha.html.twig');
+            $container->setParameter('ezsettings.default.security.login_template', '@ezdesign/Security/login-with-captcha.html.twig');
+            $container->setParameter('ezsettings.admin.security.login_template', '@ezdesign/Security/login-with-captcha.html.twig');
 
         }
     }
