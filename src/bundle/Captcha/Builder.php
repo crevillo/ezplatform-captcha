@@ -6,6 +6,9 @@ use Gregwar\Captcha\CaptchaBuilder;
 
 class Builder
 {
+    /**
+     * @var array
+     */
     private $options;
 
     public function __construct(array $options = [])
@@ -13,6 +16,9 @@ class Builder
         $this->options = $options;
     }
 
+    /**
+     * @return \Gregwar\Captcha\CaptchaBuilder
+     */
     public function build()
     {
         return (new CaptchaBuilder())->build(

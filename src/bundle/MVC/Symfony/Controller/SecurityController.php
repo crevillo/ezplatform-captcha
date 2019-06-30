@@ -28,8 +28,14 @@ class SecurityController extends Controller
      */
     protected $authenticationUtils;
 
+    /**
+     * @var \Symfony\Component\HttpFoundation\RequestStack
+     */
     protected $requestStack;
 
+    /**
+     * @var \Crevillo\EzCaptchaBundle\Captcha\Builder
+     */
     protected $builder;
 
     public function __construct(
@@ -46,6 +52,9 @@ class SecurityController extends Controller
         $this->builder = $builder;
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response;
+     */
     public function loginAction()
     {
         $captcha = $this->builder->build();
