@@ -1,5 +1,7 @@
 services:
   Crevillo\EzCaptchaBundle\Captcha\Builder:
+    autoconfigure: true
+    autowire: true
     arguments:
-      - '%ez_captcha.config%'
+      $options: '%ez_captcha.config%'
 
