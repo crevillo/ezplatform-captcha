@@ -29,7 +29,8 @@ class Builder
     {
         return $this->captchaBuilder->build(
             $this->options['width'] ?? 300,
-            $this->options['height'] ?? 75
+            $this->options['height'] ?? 75,
+            $this->options['font'] ?? __DIR__ . '/../../../../../gregwar/captcha/src/Gregwar/Captcha/Font/captcha0.ttf'
         );
     }
 }
