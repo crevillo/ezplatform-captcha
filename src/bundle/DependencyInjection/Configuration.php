@@ -25,6 +25,7 @@ class Configuration implements ConfigurationInterface
                     ->children()
                         ->scalarNode('width')->defaultValue(300)->end()
                         ->scalarNode('height')->defaultValue(75)->end()
+                        ->scalarNode('font')->end()
                     ->end()
             ->end()
         ;
